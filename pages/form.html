@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--author: Emre KAVAK
+	Date: 30/10/2022
+	Web Design and Client Side Scripting
+	continuous Assesment-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="../css/wowburger.css">
+	<script>  <!--Having short javascript text made unnecessary to create seperate file-->
+	function selectChange(element) {
+		if (element.options[element.selectedIndex].value == "16oz Supersize")
+		alert("There can some health issues, please be aware of your choices!")
+	}
+	function required()
+	{
+	var empt = document.forms["form1"]["discountcode"].value;
+	if (empt == "")
+	{
+	alert("Please input a discount code if you have it.");
+	return false;
+	}
+	else 
+	{
+	alert('Code has accepted, discount will be applied');
+	return true; 
+	}
+	}
+	</script>
+</head>
+<body>
+	<a href="burgers.html">
+		<img class="goback" src="../images/goback.jpg" alt="back button">
+	</a>
+	<div class="formdiv"> <!--Table has been created inside of form to keep tidy the form-->
+	<form name="form1" action="#" onsubmit="required()">
+		<table>
+			<tr>
+				<td>Username: <br> <!--New line maker-->
+				<input class="inputform" type="text" name="user" placeholder="Case sensitive" required> <!--required added in order to meet CA requirements-->
+				</td>
+			</tr>
+			<tr>
+				<td>Password:<br>
+				<input class="inputform" type="password" name="password" maxlength="9" placeholder="(Max length is 9 character)" >
+				</td>												<!--Max length attribute-->
+			</tr>
+			<tr>
+				<td>Choose your burger size:<br>
+				<select class="inputform" onchange="selectChange(this)" name ="Burger Size" > <!--Javascript used to make dynamic page-->
+					<option value="6oz Large">6oz Large </option>
+					<option value="10oz Extra Large">10oz Extra Large </option>
+					<option value="16oz Supersize">16oz Supersize </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>How many burgers would you like?<br>
+				<input class="inputform" type = "number" name="Burgernumber" value="1">
+				</td>
+			</tr>
+			<tr>
+				<td>Discount Code:<br>
+				<input class="inputform" type="text" name="discountcode" placeholder="(Don't leave blank)"> <!--Used name attirubutes to hit with javascript code-->
+				</td>
+			</tr>
+			<tr>
+				<td><input id="submitform" type="image" src="../images/submitbuttonform.png" alt="Submit" ></td> <!--image used for submit button-->
+			</tr>
+			<tr>
+				<td><input id="reset" type="reset"></td>
+			</tr>
+		
+		</table>
+	</form>
+	</div>
+</body>
+
+
+</html>

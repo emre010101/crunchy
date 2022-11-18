@@ -1,0 +1,128 @@
+/*author: Emre KAVAK
+	Date: 30/10/2022
+	Web Design and Client Side Scripting
+	continuous Assesment*/
+.page1one{
+	background-image: url('../images/wowburger1.jpg'); /*1st page background styling*/
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	z-index:1;
+}
+.responsive{				/*1st page the little order button made responsive*/
+	max-width:100%;
+	max-height:100%;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%, -50%);
+}
+.parent{
+	position: relative;
+	z-index: 2;
+}
+#firstpo{					/*Styling for "order now" image*/
+	float: right;
+	z-index: 5;
+	height: 35px;	
+	width: 150px;
+}
+#firstpo:hover{				/*Hover method has been applied on some images and inputs*/
+	background-color: red;
+	width: 200px;
+	height: 70px;
+}
+.responsive:hover{
+	width: 320px;
+}
+.goback:hover {
+	height: 55px;	
+}
+#submitform:hover{
+	height: 76px;
+}
+.page2{
+    background-image: url('../images/secondpp.jpg');
+	height: 100vh;
+	/*text-align: center;*/ /*I commented this code because the code down does the same job*/
+	display: flex;
+	justify-content: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.scndpi{
+	display: inline;
+	position: relative;
+	height: 100vh;
+    background-color: #ccc; /*added background color in order to avoid in the case of uploading image problems causing blank page background*/
+    text-align: center;
+}
+
+
+form{
+	 justify-content: center;
+	 display: flex; 
+	 height: auto;
+	 width: auto;
+	 font-family: fantasy;
+}
+
+table{
+	margin: 55px 55px;
+	color: white;
+	/*border: 1px solid;*/      /*Border used to see exact padding and margin*/
+	border-collapse: collapse;
+	background: rgba(0,0,0,0.5);
+}
+
+.formdiv{
+	background-image: url('../images/burger123.jpg'); /*Found more delicious burger image and used and apllied same styling as the other backgrounds*/
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	z-index:1;
+	
+}
+.goback{
+	position: absolute;
+	z-index: 5;
+	height: 40px;
+}
+.inputform{
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	box-shadow: 0 0 15px 4px;
+	border: 1px solid red;
+    border-radius: 4px;
+	background-color: #FFF192;
+}
+.inputform:hover{
+	border: 4px solid red;
+}
+#submitform{
+	height: 75px;
+	margin: 1px 30px;	
+}
+#reset{                    /*Reset button styling*/
+	padding: 7px 7px;
+	margin: 8px 120px;
+	box-shadow: 0 0 15px 4px;
+}
+
+
+
+
+
+
+
+
